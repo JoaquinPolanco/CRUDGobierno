@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProyectoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +23,16 @@ Route::get('/', function () {
 Route::resource('proyectos', ProyectoController::class);
 Route::get('/proyectos/{proyecto}/edit', [ProyectoController::class, 'edit'])->name('proyectos.edit');
 Route::put('/proyectos/{proyecto}', [ProyectoController::class, 'update'])->name('proyectos.update');
+Route::get('/proyectos/download-pdf', [ProyectoController::class, 'generatePDF'])->name('proyectos.pdf');
+Route::get('informes', [ProyectoController::class, 'informe'])->name('informes');
+
+Route::get('/proyectos/{proyecto}/download-pdf', [ProyectoController::class, 'downloadPDF'])->name('proyectos.downloadPDF');
+
+
+
+
+
+
+
+
+

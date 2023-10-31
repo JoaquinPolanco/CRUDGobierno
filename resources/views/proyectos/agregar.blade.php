@@ -35,6 +35,7 @@
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-primary">Guardar Proyecto</button>
+                            <a href="{{ url('/proyectos') }}" class="btn btn-primary">Regresar</a>
                         </div>
                     </form>
                 </div>

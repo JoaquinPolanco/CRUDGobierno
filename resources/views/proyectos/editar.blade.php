@@ -36,6 +36,7 @@
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                <a href="{{ url('/proyectos') }}" class="btn btn-primary">Regresar</a>
                             </div>
                         </form>
                     </div>
