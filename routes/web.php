@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProyectoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('proyectos', ProyectoController::class);
+Route::get('/proyectos/{proyecto}/edit', [ProyectoController::class, 'edit'])->name('proyectos.edit');
+Route::put('/proyectos/{proyecto}', [ProyectoController::class, 'update'])->name('proyectos.update');
