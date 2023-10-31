@@ -34,5 +34,3 @@ Route::get('/proyectos/{proyecto}/download-pdf', [ProyectoController::class, 'do
 
 
 
-
-

@@ -54,7 +54,7 @@
 <body>
   
     <div class="title">Informe de Proyectos</div>
-    <div class="institution">Gobierno de El Salvador</div>
+    <div class="institution">Universidad catolica de El Salvador (UNICAES)</div>
     <div class="date">Fecha: {{ date('Y-m-d') }}</div>
     <table>
         <tr>

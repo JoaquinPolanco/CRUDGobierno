@@ -130,7 +130,7 @@ class ProyectoController extends Controller
 
         return view('proyectos.informe', compact('proyectos'));
     }
-    
+
     public function downloadPDF($id)
     {
         $proyecto = Proyecto::find($id);
@@ -145,6 +145,8 @@ class ProyectoController extends Controller
         return $pdf->download('proyecto_' . $id . '.pdf');
     }
     
+
+
     
    
 }
